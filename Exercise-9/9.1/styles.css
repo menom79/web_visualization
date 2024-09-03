@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 200px;
+}
+
+.circle {
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.circle:hover {
+    fill: #850202; /* Darken the button on hover */
+}
+
+.circle:active {
+    fill: #550101; /* Darken the button even more when pressed */
+    transform: scale(0.95); /* Scale the button while pressed */
+}

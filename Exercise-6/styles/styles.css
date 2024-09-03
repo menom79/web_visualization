@@ -1,0 +1,35 @@
+/* Import variables.css */
+@import url(variables.css);
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card {
+    text-align: left;
+    text-align: justify;
+    width: var(--card-width); 
+    background-color: var(--card-bg-color); 
+    color: var(--card-main-color); 
+    padding: var(--card-padding); 
+    margin: 30px;
+    box-shadow: var(--card-shadow-h-offset) var(--card-shadow-v-offset) var(--card-shadow-blur) rgba(2, 97, 96, 0.1);
+}
+
+.card-title {
+    text-align: center;
+  }
+
+/* Add media query for mobile/tablet */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 60px); /* Adjust card width for smaller screens */
+    }
+}

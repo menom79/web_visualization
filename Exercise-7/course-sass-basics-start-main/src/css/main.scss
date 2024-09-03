@@ -1,0 +1,28 @@
+/* Table of contents
+----------------------------
+-- base imports
+-- component imports
+-- layout imports
+*/
+
+/* abstracts imports */
+
+// @use './abstracts/mixins';
+// @use './abstracts/variables';
+
+/* base imports */ 
+
+@use './base/reset';
+@use './base/typography';
+
+/* components imports */
+
+@use './components/buttons';
+@use './components/navbar';
+@use './components/hero';
+@use './components/reasons';
+
+/* layout imports*/
+
+@use './layout/layout';
+@use './layout/footer';

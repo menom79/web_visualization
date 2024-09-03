@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Exercise</title>
+    <!-- Link Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Bootstrap Typography -->
+    <div class="container">
+        <h1 class="display-4">Exercise 8</h1>
+        <p class="lead">This is a Bootstrap exercise.</p>
+    </div>
+
+    <!-- Bootstrap Images -->
+    <div class="container mt-5">
+        <img src="https://via.placeholder.com/400" class="img-fluid" alt="Placeholder Image">
+    </div>
+
+    <!-- Bootstrap Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Forms -->
+    <div class="container mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap Buttons -->
+    <div class="container mt-5">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <!-- Some random plays with bootstrap -->
+
+    <h1>Typography</h1>
+    <h2>Hello world!</h2>
+    <h3>Hello world!</h3>
+    <h2 class="h3">Hello world! - This is an h2 tag with the h3 class</h2>
+
+    <!-- display headings -->
+    <h1 class="display-1">My name is Menom! - Display 1 heading</h1>
+    <h1 class="display-4">My name is Menom! - Display 4 heading</h1>
+    <h1 class="display-6">My name is Menom! - Display 6 heading</h1>
+    <p class="display-1">p tag with display-1 class</p>
+
+    <!-- lead text & alignment -->
+    <small>This is small text</small>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="lead text-center">My name is Menom!</p>
+    <p class="lead text-end">My name is Menom!</p>
+    <p class="lead text-start">My name is Menom!</p> <!-- <p class="lead text-start">My name is Menom!</p> (This will do too as usually it starts from the left)-->
+
+    <!-- text decoration & font weight -->
+    <p class="text-decoration-underline">This is underlined text</p>
+    <p class="text-decoration-line-through">This is line through text</p>
+    <p class="fw-bold">This is bold text</p>
+    <small>This is small text</small>
+
+    <!-- text colors -->
+    <p class="text-primary">Theme primary color</p>
+    <p class="text-secondary">Theme seconday color</p>
+    <p class="text-info">Theme info color</p>
+    <p class="text-warning">Theme warning color</p>
+    <p class="text-success">Theme warning color</p>
+    <p class="text-danger">Theme danger color</p>
+    <p class="text-muted">Theme danger color</p>
+
+    <!-- bg colors -->
+    <p class="text white bg-primary">White text on primary bg</p>
+    <p class="text white bg-secondary">White text on secondary bg</p>
+    <p class="text-light bg-danger">White text on danger bg</p>
+
+    <!-- basic buttons -->
+    <h2>Buttons</h2>
+
+    <button type="button" class="btn btn-primary">Primary button</button>
+    <button type="button" class="btn btn-secondary">Secondary button</button>
+
+    <!-- anchor tags as buttons -->
+    <h2>Button sizes</h2>
+
+    <button class="btn btn-lg btn-danger">Large danger button</button>
+    <button class="btn btn-sm btn-warning">Small warning button</button>
+
+    <!-- outlined styles -->
+    <h2>Button styles</h2>
+
+    <button class="btn btn-outline-primary">Outlined primary button</button>
+    <button class="btn btn-outline-secondary btn-lg">Large outlined secondary button</button>
+
+    <!-- button groups -->
+    <h2>Button groups</h2>
+
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary">Button 1</a>
+        <a href="#" class="btn btn-warning">Button 2</a>
+        <a href="#" class="btn btn-success">Button 3</a>
+    </div>
+
+    <!-- Forms -->
+    <h2>Forms</h2>
+
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    <!-- Navigation -->
+    <h2>Navigation</h2>
+
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    <!-- Images -->
+    <h2>Images</h2>
+
+    <img src="./assets/1932644_10202457777620081_1332918960_o.jpg" class="rounded mx-auto d-block" alt="in the beach">
+    <img src="./assets/251165935_5085298518151857_5833712228861586730_n.jpg" class="rounded float-end" alt="in the river">
+
+    <!-- <picture>
+        <source srcset="./assets/1932644_10202457777620081_1332918960_o.svg" type="image/svg+xml">
+        <img src="./assets/1932644_10202457777620081_1332918960_o.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture> -->
+
+
+    <!-- Link Bootstrap JavaScript (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+}
+
+.svg {
+    width: 100%;
+    height: auto;
+}
+
+.shape {
+    animation: animateShape 5s infinite alternate; /* Animation lasts 5 seconds, alternate direction */
+}
+
+@keyframes animateShape {
+    0% {
+        transform: translateY(0) scale(1);
+        fill: #f4e16e;
+    }
+    25% {
+        transform: translateY(-20px) scale(1.1);
+        fill: #4a82dd;
+    }
+    50% {
+        transform: translateY(-40px) scale(1.2);
+        fill: #db4b4b;
+    }
+    75% {
+        transform: translateY(-20px) scale(1.1);
+        fill: #fff;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        fill: #f4e16e;
+    }
+}

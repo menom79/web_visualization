@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="section menu"></header>
+        <section class="section header">
+            <div class="photo">
+                <picture>
+                    <source media="(min-width: 401px)" srcset="images/photo-big.jpg">
+                    <source media="(max-width: 400px)" srcset="images/photo-tall.jpg">
+                    <img src="images/photo-small.jpg" alt="Header Photo">
+                </picture>
+            </div>
+        </section>
+        <section class="section content">
+            <img class="illustration" src="images/illustration.svg" alt="Illustration">
+        </section>
+        <aside class="section sign-up">
+            <img src="images/sign-up.svg" alt="Sign Up Image">
+        </aside>
+        <section class="section feature-1">
+            <img src="images/feature.svg" alt="Feature Image">
+        </section>
+        <section class="section feature-2">
+            <img src="images/feature.svg" alt="Feature Image">
+        </section>
+        <section class="section feature-3">
+            <img src="images/feature.svg" alt="Feature Image">
+        </section>
+    </div>
+</body>
+</html>
